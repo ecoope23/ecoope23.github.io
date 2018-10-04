@@ -15,7 +15,7 @@ body {
 }
 
 .business-header {
-  height: 50vh;
+  height: 40vh;
   min-height: 300px;
   background: url('../img/chordPlot.jpeg') center center no-repeat scroll;
   -webkit-background-size: cover;
