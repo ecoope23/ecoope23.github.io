@@ -33,7 +33,7 @@ h2 {
 
 .business-header {
   height: 40vh;
-  min-height: 300px;
+  /*!min-height: 300px;*/
   background: url('../img/chordPlot.jpeg') center center no-repeat scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
