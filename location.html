@@ -36,40 +36,29 @@
       </div>
     </header>
 
-    <section id="kannapolis" name="kannapolis">
-      <div class="container">
+   <!-- Picture of DHMRI -->     
+   <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-auto">
 		<img class="img-fluid mx-auto" src="img/ncrc.jpg" alt="">
 	   </div>
-	</div>
+	 </div>
 
+	<!-- Description -->
 	<div class="row">
 	   <div class="col-md-6">
 		<p class="lead">We are located at the <a href="https://transforming-science.com" target="_blank">North Carolina Research Campus</a> in Kannapolis, just a few miles north of the city of Charlotte.  The NCRC is a unique and collaborative research environment that is home to multiple North Carolina universities and companies.  Our lab can be found in the David H. Murdock Research Institute building (pictured above).</p>
-          </div>
-
-		<div class="col-md-6">
-		<div>
-		<div class="panel panel-default">
-			<div class="panel-body text-center">
-			<h4>Address</h4>
-			<div>
-			150 Research Campus Drive<br />
-			Kannapolis, NC 28081<br />
-			(704) 687-2402<br />
-			lizcooper@uncc.edu<br />
-			</div>
-			<hr />
-			<div id="map" class="map">
-			</div>
-		</div>
-		</div>
-
+           </div>
         </div>
-      </div>
-    </section>
+   </div>
 
+   <!-- Map -->
+   <div id="map"></div>
+
+   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+   <script src="custom.js"></script>
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
@@ -91,43 +80,6 @@
 
   
 
-	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-	<script type="text/javascript">
-	jQuery(function ($) {
-		function init_map() {
-			var myLocation = new google.maps.LatLng(35.4999157,-80.625601);
-			var mapOptions = {
-				center: myLocation,
-				zoom: 16
-			};
-			var marker = new.google.maps.Marker({
-				position: myLocation,
-				title: "Property Location"
-			});
-			var map = new google.maps.Map(document.getElementyById("map1"),
-				mapOptions);
-			marker.setMap(map);
-		}
-		init_map1();
-	});
-	</script>
-
-	<style>
-	.map {
-		min-width: 300px;
-		min-height: 300px;
-		width: 100%;
-		height: 100%;
-	}
-
-	.header {
-		background-color: #F5F5F5;
-		color: #36A0FF;
-		height: 70px;
-		font-size: 27px;
-		padding: 10px;
-	}
-</style>
 </body>
 
 </html>
