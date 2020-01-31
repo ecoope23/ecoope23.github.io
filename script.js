@@ -1,6 +1,6 @@
 var map = new GMaps({
     el: '#map',
-    lat:  35.4999157,-
+    lat:  35.4999157,
     lng: -80.625601
 });
 
