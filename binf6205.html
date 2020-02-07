@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,
+shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Cooper Lab - Courses - BINF 6205/8205</title>
+
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+id="mainNav">
+<div class="container">
+  <a class="navbar-brand js-scroll-trigger" href="index.htm">Back to
+  Cooper Lab Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+  data-target="#navbarResponsive" aria-controls="navbarResponsive"
+  aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+      <a class="nav-link js-scoll-trigger" href="#info">Course
+      Info</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="#description">Course
+    Description</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger"
+      href="#grading">Grading</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="#schedule">Course
+      Topics</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+  </nav>
+
+  <header class="bg-light text-black">
+  <div class="container text-center">
+    <h1>BINF 6205/8205: Computational Molecular Evolution</h1>
+  </div>
+  </header>
+
+  <section id="info" name="info">
+  <div class="container">
+  <div class="row">
+    <h2>Instructor:Liz Cooper</h2>
+    <h3>Contact Info: Office: Bioinformatics 271, Phone: 704-687-2402,
+  Email: lizcooper@uncc.edu</h3>
+    <h3>Time and Place: Tuesdays and Thursdays, 11:30am &ndash; 12:45am, Bioinformatics 301</h3>
+    <h4>Textbooks:</h4>
+<p>There is NO required book for this course.&nbsp; Any required reading (journal articles or other files) will be provided to you via Canvas.</p>
+    <h4>Optional Book:</h4>
+<p><u>The Phylogenetic Handbook: A practical approach to phylogenetic analysis and hypothesis testing</u>, Edited by Phillippe Lemey, Marco Salemi and Anne-Mieke Vandamme, 2<sup>nd</sup> Edition, Cambridge University Press 2009.</p>
+  </div>
+  </div>
+  </section>
+
+  <section id="description" name="description">
+  <div class="container">
+  <div class="row">
+    <h2>Course Description:</h2>
+    <p>This course will cover both the theoretical and practical aspects of performing phylogenetic analyses, with particular emphasis on understanding the differences and applications of the most commonly used methods.&nbsp; Topics to be covered will include: finding the appropriate data and getting it into the right format; using distance-based and probability-based methods to construct phylogenetic trees; understanding and calibrating the molecular clock to calculate divergence times; incorporating &ldquo;big data&rdquo; into phylogenetics, and estimating population parameters such as population size, growth, and migration rates.</p>
+
+    <p><strong>Pre/Co-requisites:</strong></p>
+    <p>BINF 6201: Molecular Sequence Analysis</p>
+    <p>BINF 6200: Statistics for Bioinformatics</p>
+    <p>&nbsp;</p>
+    <p><strong>Learning Objectives:</strong></p>
+    <ol>
+      <li>Understand the basic concept of a phylogeny: what it represents and how to interpret it.</li>
+      <li>Know where to find and how to generate data sets that are appropriate for phylogenetic analyses, and understand how to construct a data set for answering a particular evolutionary question.</li>
+      <li>Gain a solid understanding of the algorithms underlying different methods and know the strengths and weaknesses of each.</li>
+      <li>Be able to use several of the most commonly used phylogenetic software packages, including BEAST, RAxML, MrBayes, and the R APE package.</li>
+      <li>Know how to interpret trees and how to use them to test evolutionary models.</li>
+</ol>
+</div>
+</div>
+</section>
+
+<section id="grading" name="grading">
+<div class="container">
+<div class="row">
+  <h2>Homework and Grading</h2>
+  <p>Each class period will consist of a combination of lecture and in-class computer exercises.&nbsp; Each week, students will be expected to complete all parts of the assigned exercises; anything not finished in class must be completed at home and submitted by <strong>6:00PM </strong>on the due date.&nbsp; Students are permitted to work together on the exercises, but must turn in completed assignments individually.&nbsp; Some weeks may also include assigned reading to supplement the lecture material.&nbsp; The final project will require students to analyze a real data set and submit a written report.</p>
+<h3>Grading</h3>
+<table>
+<tbody>
+<tr>
+<td width="251">
+<table width="100%">
+<tbody>
+<tr>
+<td>
+<p>Grades will be assigned on the following scale:</p>
+<p>&nbsp;&nbsp; A=90-100%</p>
+<p>&nbsp;&nbsp; B=80-89%</p>
+<p>&nbsp;&nbsp; C=70-79%</p>
+<p>&nbsp;&nbsp; D=60-69%</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h4>Class/Home Work: 25%</h4>
+<h4>Quizzes: 20%</h4>
+<h4>Midterm: 20%</h4>
+<h4>Final Project: 30%</h4>
+<h4>Class Participation: 5%</h4>
+</div>
+</div>
+</section>
+
+<section id="schedule" name="schedule">
+<div class="container">
+<div class="row">
+  <h2>Schedule of Topics:</h2>
+<table style="border-style: solid; width: 630px; border-color: black; height: 1957px;" border="Black" width="630">
+<tbody>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 618px;" colspan="5">
+<p><strong>Section I: Sequence Data for Phylogenetics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 88px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 48px; width: 112px;">
+<p><strong>Date</strong></p>
+</td>
+<td style="height: 48px; width: 208px;">
+<p><strong>Topic</strong></p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>Quizzes</strong></p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p><strong>Exercises Due</strong></p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 96px; width: 88px;" rowspan="2">
+<p><strong>Week 1</strong></p>
+</td>
+<td style="height: 48px; width: 112px;">
+<p>8/20</p>
+</td>
+<td style="height: 48px; width: 208px;">
+<p>Introduction &amp; Course Overview</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 96px; width: 115px;" rowspan="2">
+<p>8/26</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 112px;">
+<p>8/22</p>
+</td>
+<td style="height: 48px; width: 208px;">
+<p>Multiple Sequence Alignment</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 96px; width: 88px;" rowspan="2">
+<p><strong>Week2</strong></p>
+</td>
+<td style="height: 48px; width: 112px;">
+<p>8/27</p>
+</td>
+<td style="height: 48px; width: 208px;">
+<p>Identifying Homologous Genes</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p>Quiz 1</p>
+</td>
+<td style="height: 96px; width: 115px;" rowspan="2">
+<p>9/2</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 112px;">
+<p>8/29</p>
+</td>
+<td style="height: 48px; width: 208px;">
+<p>Orthology vs Paralogy (continued)</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 618px;" colspan="5">
+<p><strong>Section II: Constructing Trees</strong></p>
+</td>
+</tr>
+<tr style="height: 72px;">
+<td style="height: 144px; width: 88px;" rowspan="2">
+<p><strong>Week 3</strong></p>
+</td>
+<td style="height: 72px; width: 112px;">
+<p>9/3</p>
+</td>
+<td style="height: 72px; width: 208px;">
+<p>Genetic Distance and Substitution Models</p>
+</td>
+<td style="height: 72px; width: 63px;">
+<p>Quiz 2</p>
+</td>
+<td style="height: 144px; width: 115px;" rowspan="2">
+<p>9/9</p>
+</td>
+</tr>
+<tr style="height: 72px;">
+<td style="height: 72px; width: 112px;">
+<p>9/5</p>
+</td>
+<td style="height: 72px; width: 208px;">
+<p>Distance-based Methods (UPGMA, NJ)</p>
+</td>
+<td style="height: 72px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 96px; width: 88px;" rowspan="2">
+<p><strong>Week4</strong></p>
+</td>
+<td style="height: 48px; width: 112px;">
+<p>9/10</p>
+</td>
+<td style="height: 96px; width: 208px;" rowspan="2">
+<p>Distance-based Methods continued; bootstrapping and jackknifing</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p>Quiz 3</p>
+</td>
+<td style="height: 96px; width: 115px;" rowspan="2">
+<p>9/16</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 112px;">
+<p>9/12</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 96px; width: 88px;" rowspan="2">
+<p><strong>Week 5</strong></p>
+</td>
+<td style="height: 48px; width: 112px;">
+<p>9/17</p>
+</td>
+<td style="height: 96px; width: 208px;" rowspan="2">
+<p>Maximum Likelihood (RAxML)</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p>Quiz 4</p>
+</td>
+<td style="height: 96px; width: 115px;" rowspan="2">
+<p>9/23</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 112px;">
+<p>9/19</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 618px;" colspan="5">
+<p><strong>Section III: Testing and Interpreting Trees</strong></p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 96px; width: 88px;" rowspan="2">
+<p><strong>Week 6</strong></p>
+</td>
+<td style="height: 48px; width: 112px;">
+<p>9/24</p>
+</td>
+<td style="height: 96px; width: 208px;" rowspan="2">
+<p>ML continued; intro to Bayesian methods</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p>Quiz 5</p>
+</td>
+<td style="height: 96px; width: 115px;" rowspan="2">
+<p>9/30</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 112px;">
+<p>9/26</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr style="height: 61px;">
+<td style="height: 109px; width: 88px;" rowspan="2">
+<p><strong>Week 7</strong></p>
+</td>
+<td style="height: 61px; width: 112px;">
+<p>10/1</p>
+</td>
+<td style="height: 109px; width: 208px;" rowspan="2">
+<p>Bayesian methods continued; mid-term review</p>
+</td>
+<td style="height: 61px; width: 63px;">
+<p>Quiz 6</p>
+</td>
+<td style="height: 109px; width: 115px;" rowspan="2">
+<p>10/14</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 112px;">
+<p>10/3</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 96px; width: 88px;" rowspan="2">
+<p><strong>Week 8</strong></p>
+</td>
+<td style="height: 48px; width: 112px;">
+<p>10/8</p>
+</td>
+<td style="height: 48px; width: 208px;">
+<p><strong>FALL BREAK (No Class)</strong></p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 112px;">
+<p>10/10</p>
+</td>
+<td style="height: 48px; width: 208px;">
+<p><strong>MidTerm Exam</strong></p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 618px;" colspan="5">
+<p><strong>Section IV: Using Trees to Test Evolutionary Models</strong></p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 96px; width: 88px;" rowspan="2">
+<p><strong>Week 9</strong></p>
+</td>
+<td style="height: 48px; width: 112px;">
+<p>10/15</p>
+</td>
+<td style="height: 96px; width: 208px;" rowspan="2">
+<p><span style="color: #ff0000;">Go over midterm solutions;</span></p>
+<p><span style="color: #ff0000;">Ancestral State Reconstruction</span></p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p>10/21</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 112px;">
+<p>10/17</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 96px; width: 88px;" rowspan="2">
+<p><strong>Week 10</strong></p>
+</td>
+<td style="height: 48px; width: 112px;">
+<p>10/22</p>
+</td>
+<td style="height: 96px; width: 208px;" rowspan="2">
+<p><span style="color: #ff0000;">Comparing Trees &amp; assessing tree estimation methods</span></p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p>Quiz 7</p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p>10/28</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 112px;">
+<p>10/24</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 96px; width: 88px;" rowspan="2">
+<p><strong>Week 11</strong></p>
+</td>
+<td style="height: 48px; width: 112px;">
+<p>10/29</p>
+</td>
+<td style="height: 96px; width: 208px;" rowspan="2">
+<p><span style="color: #ff0000;">Multi-gene trees &amp; data partitioning; next-gen data and phylogenetic methods</span></p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p>Quiz 8</p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p>11/4</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 112px;">
+<p>10/31</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 96px; width: 88px;" rowspan="2">
+<p><strong>Week 12</strong></p>
+</td>
+<td style="height: 48px; width: 112px;">
+<p>11/5</p>
+</td>
+<td style="height: 96px; width: 208px;" rowspan="2">
+<p><span style="color: #ff0000;">Gene Genealogies &amp; Intro to Coalescent Theory; effects of selection on gene trees</span></p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p>Quiz 9</p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p>11/11</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 112px;">
+<p>11/7</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 96px; width: 88px;" rowspan="2">
+<p><strong>Week 13</strong></p>
+</td>
+<td style="height: 48px; width: 112px;">
+<p>11/12</p>
+</td>
+<td style="height: 96px; width: 208px;" rowspan="2">
+<p><span style="color: #ff0000;">Calibrating the Molecular Clock to estimate divergence times</span></p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p>Quiz 10</p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p>11/18</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 112px;">
+<p>11/14</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 120px; width: 88px;" rowspan="2">
+<p><strong>Week 14</strong></p>
+</td>
+<td style="height: 48px; width: 112px;">
+<p>11/19</p>
+</td>
+<td style="height: 48px; width: 208px;" rowspan="2">
+<p><span style="color: #ff0000;">Gene Flow and non-tree like evolution</span></p>
+<p>&nbsp;</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p>11/20</p>
+</td>
+</tr>
+<tr style="height: 72px;">
+<td style="height: 72px; width: 112px;">
+<p>11/21</p>
+</td>
+<td style="height: 72px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 72px; width: 115px;">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 120px; width: 88px;" rowspan="2">
+<p><strong>Week 15</strong></p>
+</td>
+<td style="height: 48px; width: 112px;">
+<p>11/26</p>
+</td>
+<td style="height: 48px; width: 208px;">
+<p><span style="color: #ff0000;">Review session and discuss final projects</span></p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 72px;">
+<td style="height: 72px; width: 112px;">
+<p>11/28</p>
+</td>
+<td style="height: 72px; width: 208px;">
+<p><strong>THANKSGIVING BREAK (No Class)</strong></p>
+</td>
+<td style="height: 72px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 72px; width: 115px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 96px; width: 88px;" rowspan="2">
+<p><strong>Week 16</strong></p>
+</td>
+<td style="height: 48px; width: 112px;">
+<p>12/3</p>
+</td>
+<td style="height: 48px; width: 208px;">
+<p>Work on Projects</p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr style="height: 48px;">
+<td style="height: 48px; width: 112px;">
+<p>12/5</p>
+</td>
+<td style="height: 48px; width: 208px;">
+<p><strong>READING DAY (No Class)</strong></p>
+</td>
+<td style="height: 48px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 48px; width: 115px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+<tr style="height: 72px;">
+<td style="height: 72px; width: 88px;">
+<p><strong>Exam Week</strong></p>
+</td>
+<td style="height: 72px; width: 112px;">
+<p><strong>12/6-12/12</strong></p>
+</td>
+<td style="height: 72px; width: 208px;">
+<p><strong>No Exam; <a title="Final Project Guidelines" href="/courses/110074/pages/final-project-guidelines">Final Projects</a> Due</strong></p>
+</td>
+<td style="height: 72px; width: 63px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+<td style="height: 72px; width: 115px;">
+<p><strong>&nbsp;</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section id="policies" name="policies">
+<div class="container">
+  <div class="row">
+    <h2>Policies and Procedures:</h2>
+    <ol>
+      <li><strong>Academic Integrity</strong></li>
+    </ol>
+    <p>All students are required to read and abide by the Code of Student Academic Integrity.&nbsp; Violations of the Code of Student Academic Integrity, including plagiarism, will result in disciplinary action as provided in the Code.&nbsp; Definitions and examples of plagiarism are set forth in the Code.&nbsp; The Code is available from the Dean of Students Office or online at: <a href="https://legal.uncc.edu/policies/up-407">https://legal.uncc.edu/policies/up-407</a>.&nbsp; A set of links to various resources on plagiarism and how to avoid it is available here: <a href="https://wts.indiana.edu/writing-guides/plagiarism.html">https://wts.indiana.edu/writing-guides/plagiarism.html</a>.</p>
+<p>&nbsp;</p>
+<ol>
+<li><strong>Attendance</strong></li>
+</ol>
+<p>Attendance at lecture is required, although exceptions will be made for reasons such as illness or family emergency.&nbsp; Missed quizzes CANNOT be made up, but can be administered in advance or electronically if you notify Dr. Cooper by 7:00PM before the day of the scheduled quiz.&nbsp; Excessive absences will result in a reduced classroom participation score and will negatively impact the overall course grade.</p>
+<p>&nbsp;</p>
+<ol>
+<li><strong>Disability Accommodations</strong></li>
+</ol>
+<p>Students in this course seeking accommodations for disabilities
+should first consult with the Office of Disability Services and follow
+the instructions of that office for obtaining accommodations.</p>
+
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+<div class="container">
+  <p class="m-0 text-center text-white">Copyright &copy; Liz Cooper
+  2020</p>
+</div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+
+  </body>
+
+</html>
+
+  
+
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+           
+            
+            
+            
+            
+            
+           
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+           
+            
+            
+            
+            
+            
+            
+           
+
+            
+            
+            
+           
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+           
+            
+           
+            
+            
+           
+            
+
+            
+            
+           
+            
+           
+            
+           
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+           
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+           
+           
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+           
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+           
+            
+           
+            
+            
+            
+            
+            
+           
+            
+            
