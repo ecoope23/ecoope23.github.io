@@ -60,9 +60,9 @@
     <!-- Page Content -->
     <div class="container">
 
-      <div class="row">
+      <div class="row" id="info">
         <div class="col-sm-8">
-	   <h2 class="mt-4" id="info">Course Description</h2>
+	   <h2 class="mt-4">Course Description</h2>
 	   <p>This course will cover both the theoretical and practical aspects of performing phylogenetic analyses, with particular emphasis on understanding the differences and applications of the most commonly used methods. Topics to be covered will include: finding the appropriate data and getting it into the right format; using distance-based and probability-based methods to construct phylogenetic trees; performing ancestral state reconstruction to track the evolution of characters; understanding and calibrating the molecular clock to calculate divergence times; incorporating big data into phylogenetics, and estimating population parameters such as population size, growth, and migration rates.</p>
 	   <p><strong>Recommended Pre/Co-requisites:</strong> BINF 6201: Molecular Sequence Analysis; BINF 6200: Statistics for Bioinformatics</p>
 	   <p><strong>Learning Objectives:</strong></p>
@@ -93,21 +93,21 @@
       </div>
       <!-- /.row -->
 
-      <div class="row">
+      <div class="row" id="book">
 	<div class="col-sm-4">
 	   <div class="card">
 		<img class="card-img" src="img/phyloHandbook.jpg" alt="">
 	   </div>
 	</div>
         <div class="col-sm-8">
-           <h2 class="mt-4" id="book">Optional Reading</h2>
+           <h2 class="mt-4">Optional Reading</h2>
               <p>There is NO required textbook for this course, and any required reading (in the form of journal articles or other papers) will be provided to students via Canvas.  However, there is a book which some students may find helpful, particularly those interested in learning more of the mathematical details underlying genetic distance and maximum likelihood methods: <u>The Phylogenetic Handbook: A practical approach to phylogenetic analysis and hypothesis testing</u>, Edited by Phillippe Lemey, Marco Salemi and Anne-Mieke Vandamme, 2<sup>nd</sup> Edition, Cambridge University Press 2009.</p>
         </div>
       </div>
       <!-- /.row -->
 
-      <div class="row">
-	<h2 class="mt-4" id="grading">Homework and Grading</h2>
+      <div class="row" id="grading">
+	<h2 class="mt-4">Homework and Grading</h2>
 	    <p>Each class period will consist of a combination of lecture and in-class computer exercises. Each week, students will be expected to complete all parts of the assigned exercises; anything not finished in class must be completed at home and submitted by <strong>6:00PM </strong>on the due date. Students are permitted to work together on the exercises, but must turn in completed assignments individually. Some weeks may also include assigned reading to supplement the lecture material. The final project will require students to analyze a real data set and submit a written report.</p>
 	</div>
 	<!-- /.row -->
@@ -162,6 +162,127 @@
 	   </div>
 	</div>
 	<!-- ./row -->
+
+	<div class="row" id="topics">
+	   <h2 class="mt-4">List of Course Topics</h2>
+	   <p>The course schedule is organized into roughly 4 sections.  In the first part of the course, we will review and discuss how we select certain sequences and process them in order to use them in a phylogenetic analysis.  Next, we discuss different methods for constructing phylogenetic trees with small (single gene) data sets, along with how to compare and evaluate these methods.  After the midterm, we start to look at newer methods we can use to incorporate larger, multi-gene and next-gen sequencing data into a phylogeny. Finally, we look at how we can use phylogenies and phylogenetic inference to look beyond species relationships and answer other evolutionary questions.</p>
+	</div>
+	<!-- /.row -->
+	<div class="row">
+	   <div class="table-responsive">
+		<table class="table">
+		   <thead>
+			<tr class="table-success">
+				<th scope="col">Section 1</th>
+				<th scope="col">Sequence Data for Phylogenetics</th>
+			</tr>
+		    </thead>
+		    <tbody>
+			<tr>
+				<th scope="row">1.1</th>
+				<td>Introduction and History of Phylogenetics</td>
+			</tr>
+			<tr>
+				<th scope="row">1.2</th>
+				<td>Multiple Sequence Alignment Methods</td>
+			</tr>
+			<tr>
+				<th scope="row">1.3</th>
+				<td>Identifying Homologous Genes</td>
+			</tr>
+			<tr>
+				<th scope="row">1.4</th>
+				<td>Gene Family Evolution: Gene Duplication and Gene Loss</td>
+			</tr>
+		   </tbody>
+		</table>
+		<table class="table">
+		   <thead>
+			<tr class="table-primary">
+				<th scope="col">Section 2</th>
+				<th scope="col">Constructing Trees with Single Genes</th>
+			</tr>
+		   </thead>
+		   <tbody>
+			<tr>
+				<th scope="row">2.1</th>
+				<td>Genetic Distance Methods: UPGMA and Neighbor-Joining</td>
+			</tr>
+			<tr>
+				<th scope="row">2.2</th>
+				<td>Maximum Parsimony</td>
+			</tr>
+			<tr>
+				<th scope="row">2.3</th>
+				<td>Bootstrapping to Find Branch Support</td>
+			</tr>
+			<tr>
+				<th scope="row">2.4</th>
+				<td>Maximum Likelihood Methods (RAxML)</td>
+			</tr>
+			<tr>
+				<th scope="row">2.5</th>
+				<td>Combining, Summarizing, and Comparing Trees</td>
+			</tr>
+			<tr>
+				<th scope="row">2.6</th>
+				<td>Ancestral State Reconstruction</td>
+			</tr>
+		    </tbody>
+		</table>
+		<table class="table">
+		    <thead>
+			<tr class="table-danger">
+				<th scope="col">Section 3</th>
+				<th scope="col">Advanced Methods for Larger Datasets</th>
+			</tr>
+		    </thead>
+		    <tbody>
+			<tr>
+				<th scope="row">3.1</th>
+				<td>Bayesian Inference Methods</td>
+			</tr>
+			<tr>
+				<th scope="row">3.2</th>
+				<td>Concatenating and Partitioning Multiple Genes</td>
+			</tr>
+			<tr>
+				<th scope="row">3.3</th>
+				<td>Coalescent Theory and the Multispecies Coalescent</td>
+			</tr>
+			<tr>
+				<th scope="row">3.4</th>
+				<td>Methods for SNP data: Quartets and SNAPP</td>
+			</tr>
+		     </tbody>
+		</table>
+		<table class="table">
+		     <thead>
+			<tr class="table-warning">
+				<th scope="col">Section 4</th>
+				<th scope="col">Using Trees to Test Evolutionary Models</th>
+			</tr>
+		      </thead>
+		      <tbody>
+			<tr>
+				<th scope="row">4.1</th>
+				<td>Estimating Divergence Times with the Molecular Clock</td>
+			</tr>
+			<tr>
+				<th scope="row">4.2</th>
+				<td>Gene Flow and Phylogenetic Networks</td>
+			</tr>
+			<tr>
+				<th scope="row">4.3</th>
+				<td>Population Size Changes</td>
+			</tr>
+		     </tbody>
+		</table>
+	</div>
+	<!-- /.table-responsive -->
+	</div>
+	<!-- /.row -->
+
   </div>
   <!-- /.container -->
 
